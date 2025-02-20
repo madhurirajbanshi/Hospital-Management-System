@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.suo
+*.user
+packages/
+node_modules/
+appsettings*.json
+secrets.json
