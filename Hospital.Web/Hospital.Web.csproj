@@ -2,8 +2,9 @@
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
-		<Nullable>enable</Nullable>
+		<Nullable>annotations</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
 		<RootNamespace>Hospital_Management_System</RootNamespace>
 	</PropertyGroup>
 
@@ -11,14 +12,14 @@
 		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 		<WarningsAsErrors />
 		<NoWarn />
-		<WarningLevel>4</WarningLevel>
+		<WarningLevel>0</WarningLevel>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 		<WarningsAsErrors />
 		<NoWarn />
-		<WarningLevel>4</WarningLevel>
+		<WarningLevel>0</WarningLevel>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -35,6 +36,13 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Hospital.Repositories\Hospital.Repositories.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Areas\Admin\Controllers\" />
+	  <Folder Include="Areas\Admin\Views\" />
+	  <Folder Include="Areas\Doctor\Controllers\" />
+	  <Folder Include="Areas\Doctor\Views\" />
 	</ItemGroup>
 
 </Project>
